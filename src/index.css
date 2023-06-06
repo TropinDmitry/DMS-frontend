@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+    user-select: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+.default {
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    padding: 8px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.default.icon {
+    padding-left: 45px;
+}
+
+.invalid {
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    padding: 8px 16px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.level {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.level.normal {
+    background-color: #cccccc;
+}
+
+.level.priority {
+    background-color: #15803d;
+}
+
+.level.emergency {
+    background-color: #dc2626;
+}
+
+.progress-bar {
+    font-weight: 600;
+    color: #dbe1fa;
+    background-color: #2563eb;
+    text-align: center;
+    padding: 6px;
+    line-height: 1;
+    border-radius: 9999px;
+}
+
+.progress-bar.full {
+    width: 100%;
+}
+
+.progress-bar.percent60 {
+    width: 60%;
+}
+
+.progress-bar.percent30 {
+    width: 30%;
+}
+
+.block-ellipsis {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    font-size: 15px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.activeTab {
+    color: #2563eb;
+    background-color: #ffffff;
+}
